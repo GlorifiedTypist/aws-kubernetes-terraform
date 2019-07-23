@@ -32,8 +32,6 @@ module "vpc" {
   public_az_subnet_mapping  = "${var.public_az_subnet_mapping}"
 }
 
-# TODO: add r53 entry and update --apiserver-cert-extra-sans in master-user-data
-
 data "aws_ami" "ubuntu" {
     most_recent = true
 
